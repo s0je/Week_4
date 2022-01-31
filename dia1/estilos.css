@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightsteelblue;
+}
+.cabecera{
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+}
+.menu{
+    border-bottom: 1px solid white;
+    background-color: mediumblue;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.menu__link{
+    text-decoration: none;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cuerpo{
+    border: 2px solid brown;
+    width: 100%;
+    height: 700px;
+}
+.perfil{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.perfil__foto{
+    width: 20%;    
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.perfil__texto{
+    border: 1px solid red;
+    background-color: white;
+    background: transparent 20%;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.saludo{
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
