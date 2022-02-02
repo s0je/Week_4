@@ -5,6 +5,16 @@ body {
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     box-sizing: border-box;
 }
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 32px auto 0;
+    max-width: 1000px;
+    padding-bottom: 32px;
+    width: 100%;
+}
   
 a {
     text-decoration: none;
@@ -13,12 +23,14 @@ a {
 .contenedor {
     max-width: 1000px;
     margin: 0 auto;
+    width: 450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     margin-top: 3rem;
     font-size: 14px;
+    margin-left: 0;
 }
 
 .imagen {
@@ -33,7 +45,7 @@ a {
   
 .box {
     max-width: 350px;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +161,7 @@ input:not(:placeholder-shown) {
     background: transparent;
 }
   
-.fb-icon {
+.fab-icon {
     color: #385185;
     font-size: 1rem;
     padding-right: 1px;
@@ -163,4 +175,86 @@ input:not(:placeholder-shown) {
 .signup {
     color: #3897f0;
     font-weight: 600;
+}
+.imagen{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.texto__descarga{
+    text-align: center;
+}
+.descarga{
+    height: 40px;
+    width: auto;
+    margin-right: 8px;
+}
+.phone {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-image: url(./img/43cc71bb1b43.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 454px 618px;
+    -webkit-flex-basis: 454px;
+    -ms-flex-preferred-size: 454px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+}
+.photo{
+    height: 427px;
+    left: 0;
+    position: relative;
+    top: 0;
+    visibility: visible;
+    width: 240px;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .phone{
+        display: none;
+    }
+    .padre{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .phone{
+        display: none;
+    }
+    .padre{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .phone{
+        display: none;
+    }
 }
