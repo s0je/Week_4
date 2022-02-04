@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tres en raya</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo"><h2>TRES EN RAYA</h2></div>
+        <div class="partidas"><h2>Número de partidas: &nbsp;</h2><h2 id="contar">0</h2></div>
+        <div class="marcador"><p id="jugador_1" class="jugador_1">0</p><p>&nbsp; - &nbsp;</p><p id="jugador_2" class="jugador_2">0</p></div>
+        <div id = "info" class="info">&nbsp;&nbsp;</div>
+        <div class="cuadricula">
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+            <div onclick="marcar" class="cuadro"></div>
+        </div>
+        <div>
+            <button onclick="reset()"  id ="boton"  class="boton" type="reset">Volver a jugar</button>
+            <button onclick="borrar()" id ="borrar" class="boton" type="button">Reiniciar</button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
