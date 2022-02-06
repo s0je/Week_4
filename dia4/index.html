@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Tienda Online</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/clipart3444844.png" alt="" width="70" height="50" class="d-inline-block align-text-top"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand fw-bold fs-1" href="#">Tienda Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active fw-bold" aria-current="page" href="index.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Home</a>
               </li>
               <li>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button id="carrito" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Carrito
                 </button>
               </li>
@@ -35,8 +36,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/vaquero-slim-l38-195-m-azul-tallas-grandes-hombre-xy408_9_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Vaquero slim L36 +1,90 m</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto1" class="card-title">Vaquero slim</h5>
+                  <span class="price"><p id="precio1">15.00</p><p>€</p></span>
+                  <a id="boton1" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -44,8 +46,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/camiseta-marinera-san-valentin-azulnegro-tallas-grandes-hombre-ys399_2_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Camiseta marinera</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto2" class="card-title">Camiseta marinera</h5>
+                  <span class="price"><p id="precio2">7.00</p><p>€</p></span>
+                  <a id="boton2" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -53,8 +56,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/sudadera-colorblock-azul-tallas-grandes-hombre-ys398_1_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Sudadera colorblock</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto3" class="card-title">Sudadera colorblock</h5>
+                  <span class="price"><p id="precio3">9.00</p><p>€</p></span>
+                  <a id="boton3" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -67,8 +71,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/sudadera-unisex-ano-nuevo-chino-gris-hombre-talla-s-xxl-yt593_6_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Sudadera unisex Año Nuevo chino</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto4" class="card-title">Sudadera unisex Año Nuevo chino</h5>
+                  <span class="price"><p id="precio4">25.00</p><p>€</p></span>
+                  <a id="boton4" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -76,8 +81,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/zapatillas-adidas-runfalcon-20-beige-hombre-talla-s-xxl-ys438_1_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Zapatillas 'Adidas Runfalcon 2.0'</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto5" class="card-title">Zapatillas 'Adidas Runfalcon 2.0'</h5>
+                  <span class="price"><p id="precio5">20.00</p><p>€</p></span>
+                  <a id="boton5" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -85,8 +91,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/falda-larga-con-motivos-azul-mujer-talla-34-a-48-yt490_4_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Falda larga con motivos</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto6" class="card-title">Falda larga con motivos</h5>
+                  <span class="price"><p id="precio6">15.00</p><p>€</p></span>
+                  <a id="boton6" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -99,8 +106,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/zapatillas-adidas-court-bold-blanco-mujer-talla-34-a-48-zd115_1_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Zapatillas 'Adidas' 'Court Bold'</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto7" class="card-title">Zapatillas 'Adidas' 'Court Bold'</h5>
+                  <span class="price"><p id="precio7">30.00</p><p>€</p></span>
+                  <a id="boton7" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -108,8 +116,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/legging-de-deporte-negro-iris-tallas-grandes-mujer-ys943_1_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Legging de deporte</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto8" class="card-title">Legging de deporte</h5>
+                  <span class="price"><p id="precio8">10.00</p><p>€</p></span>
+                  <a id="boton8" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -117,8 +126,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://static.kiabi.es/images/falta-corta-con-volante-rojo-mujer-talla-34-a-48-yq908_2_lpr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Falta corta con volante</h5>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <h5 id="producto9" class="card-title">Falta corta con volante</h5>
+                  <span class="price"><p id="precio9">7.00</p><p>€</p></span>
+                  <a id="boton9" href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           </div>
@@ -144,15 +154,25 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="modal-body" id="modal">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+
+                    </tbody>
+                  </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -160,5 +180,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="tiendascript.js"></script>
 </body>
 </html>
