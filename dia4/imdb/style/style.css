@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head-body{
+    background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t31.18172-8/s960x960/13988166_1094572393966862_864832471335781882_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=e3f864&_nc_ohc=kxLecXW7oooAX_hsPo-&_nc_ht=scontent-mad1-1.xx&oh=00_AT-hZxcCmV0ThO92A-S_6zTj_7K4HuhYVyzydx4Mzcqe6Q&oe=62249785);
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 1228px;
+    font-size: xx-large;
+    font-weight: bold;
+}
