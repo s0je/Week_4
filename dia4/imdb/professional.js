@@ -1,5 +1,5 @@
-class Professional
-{
+class Professional{
+
     constructor(image, name, age, genre, weight, height, hairColor, race, isRetired, nationality, oscarsNumber, profesion)
     {   
         this.image = image;
@@ -18,7 +18,8 @@ class Professional
 
     printAll()
     {
-        console.log("Name: "+this.name+ "\n Genre: "+this.genre+"\n Weigth: "+this.weight+"\n Height: "+this.height+"\n Hair color: "+this.hairColor+"\n Race: "+this.race+"\n Is retired?: "+this.isRetired+"\n Nationality: "+this.nationality+"\n Number of Oscars: "+this.oscarsNumber+" \n Profession: "+this.profesion);
+        console.log(`Name: ${this.name}\n Genre: ${this.genre}\n Weigth: ${this.weight}\n Height: ${this.height}\n Hair color: ${this.hairColor}\n Race: ${this.race}\n Is retired?: ${this.isRetired}\n Nationality: ${this.nationality}\n Number of Oscars: ${this.oscarsNumber} \n Profession: ${this.profesion}`);
     }
 }
-module.exports ={Professional: Professional};
+
+module.exports = {Professional: Professional};
