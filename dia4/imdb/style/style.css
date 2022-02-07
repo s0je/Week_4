@@ -13,3 +13,13 @@
     font-size: xx-large;
     font-weight: bold;
 }
+.cabecera{
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
