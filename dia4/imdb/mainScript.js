@@ -117,8 +117,54 @@ jQuery(()=>{
                                         </div>
                                     </div>
                                 </div>`);
+        
         }
     })
+    $("#add").on("click", ()=>{
+        let portada = $("#portada").val();
+        let title = $("#titulo").val();
+        let anyo = $("#anyo").val();
+        let actores = $("#actores").val();
+        let pais = $("#pais").val();
+        let director = $("#director").val();
+        let guionista = $("#guionista").val();
+        let idioma = $("#idioma").val();
+        let plat = $("#plataforma").val();
+        let mcu = $("#isMCU").val();
+        let protagonista = $("#protagonista").val();
+        let producer = $("#productor").val();
+        let distributor = $("#distribuidor").val();
+        let genero = $("#genero").val();
+        let nuevaPelicula = new Movie (portada,title,anyo,actores,pais,director,guionista,idioma,plat,mcu,protagonista,producer,distributor,genero);
+        peliculas.push(nuevaPelicula);
+
+        $("#pelicula").append(`<div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="`+nuevaPelicula.portada+`" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="card-header">
+                                            `+nuevaPelicula.title+`
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Año de lanzamiento: `+nuevaPelicula.releaseYear+`</li>
+                                                <li class="list-group-item">Actores: `+nuevaPelicula.actors+`</li>
+                                                <li class="list-group-item">País: `+nuevaPelicula.nationality+`</li>
+                                                <li class="list-group-item">Diector: `+nuevaPelicula.director+`</li>
+                                                <li class="list-group-item">Guionista: `+nuevaPelicula.writer+`</li>
+                                                <li class="list-group-item">Idioma: `+nuevaPelicula.language+`</li>
+                                                <li class="list-group-item">Plataforma: `+nuevaPelicula.platform+`</li>
+                                                <li class="list-group-item">Universo Marvel: `+nuevaPelicula.isMCU+`</li>
+                                                <li class="list-group-item">Protagonista: `+nuevaPelicula.mainCharacterName+`</li>
+                                                <li class="list-group-item">Productor: `+nuevaPelicula.producer.name+`</li>
+                                                <li class="list-group-item">Distribuidora: `+nuevaPelicula.distributor+`</li>
+                                                <li class="list-group-item">Género: `+nuevaPelicula.genre+`</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>`);
+
+    })
+
     $(document).ready( ()=>{
         for(let i=0; i<peliculas.length; i++)
         {
@@ -149,21 +195,5 @@ jQuery(()=>{
         }
     })
 
-    $("#añadir").on("click", ()=>{
-        let nuevaPelicula = new Movie ($("#portada").text(),
-                                        $("#titulo").text(),
-                                        $("#anyo").text(),
-                                        $("#actores").text(),
-                                        $("#pais").text(),$("#director").text(),
-                                        $("#guionista").text(),
-                                        $("#idioma").text(),
-                                        $("#plataforma").text(),
-                                        $("#isMCU").text(),
-                                        $("#protagonista").text(),
-                                        $("#productor").text(),
-                                        $("#distribuidor").text(),
-                                        $("#genero").text());
-        peliculas.push(nuevaPelicula);
-
-    })
+    
 })
