@@ -55,20 +55,23 @@ let j=1;
 
    $("#carrito").on("click", ()=>{
       total = productoP.reduce((a, b) => a + b, 0);
+      let text = '';
+      let j = 1;
       for(let i=0;i<productoN.length;i++)
       {
-      $("#tabla-body").append(`<tr>
-                              <th scope="row">`+j+`</th>
-                              <td>`+productoN[i]+`</td>
-                              <td>`+productoP[i]+` `+divisa+`</td>
-                           </tr>`);
-                           j++;                    
+         text += "<tr>";
+         text += "<th scope= 'row'>"+j+"</th>";
+         text += "<td>"+productoN[i]+"</td>";
+         text += "<td>"+productoP[i]+" "+divisa+"</td>";
+         text += "</tr>";
+         j++;                    
       }
-      $("#tabla-body").append(`<tr>
-                              <td></td>
-                              <td><b>Precio total</b></td>
-                              <td>`+total+` `+divisa+`</td>
-                              </tr>`)
+      text += "<tr>";
+      text += "<td></td>";
+      text += "<td><b>Precio total</b></td>";
+      text += "<td>"+total+" "+divisa+"</td>";
+      text += "</tr>";
+      $("#tabla-body").html(text);
    })
  })
 
